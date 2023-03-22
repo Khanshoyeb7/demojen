@@ -11,7 +11,7 @@ pipeline {
         steps {
             script {
              // move the new changed
-             withCredentials([usernamePassword(credentialsId: 'AWSCred', passwordVariable: 'pass', usernameVariable: 'user')]) {
+             withCredentials([usernamePassword(credentialsId: 'LinuxCred', passwordVariable: 'pass', usernameVariable: 'user')]) {
              remote.user = user
              remote.password = pass
              sshPut remote: remote, from: "index.html", into: "/var/www/html"
