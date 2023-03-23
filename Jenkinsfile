@@ -1,3 +1,9 @@
+def remote = [:]
+remote.name = 'test'
+remote.host = '<remote IP>'
+remote.port = 22
+remote.allowAnyHosts = true
+
 pipeline {
     agent any
      stages {
