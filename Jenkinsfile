@@ -21,7 +21,7 @@ pipeline {
              remote.user = user
              remote.password = pass
              sshPut remote: remote, from: "index.html", into: "/var/www/html"
-             sshCommand remote: remote, command: "ls /var/www/html
+             sshCommand remote: remote, command: "ls /var/www/html"
              }
            }
           }
